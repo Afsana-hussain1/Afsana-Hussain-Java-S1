@@ -1,7 +1,23 @@
 package com.company;
 
-public class Bathroom {
+public class Bathroom extends Home {
 
-    public boolean Hasbathroom();
-    public float
+    private boolean Hasbathroom;
+    private  float SquareFeet;
+
+    public boolean isHasbathroom() {
+        return Hasbathroom;
+    }
+
+    public void setHasbathroom(boolean hasbathroom) {
+        Hasbathroom = hasbathroom;
+    }
+
+    public float getSquareFeet() {
+        return SquareFeet;
+    }
+
+    public void setSquareFeet(float squareFeet) {
+        SquareFeet = squareFeet;
+    }
 }

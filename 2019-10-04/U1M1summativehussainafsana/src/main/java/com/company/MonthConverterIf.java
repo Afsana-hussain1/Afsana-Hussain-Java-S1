@@ -14,7 +14,7 @@ public class MonthConverterIf {
             System.out.println("January");
 
         }else if(userInput ==2){
-            System.out.println("Febuary");
+            System.out.println("February");
 
         } else if(userInput == 3){
             System.out.println("March");

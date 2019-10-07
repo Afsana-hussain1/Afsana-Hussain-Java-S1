@@ -16,7 +16,7 @@ public class SomeMath {
 
             double largest =Double.MIN_VALUE;
             for(int x=0; x<array1.length;x++){
-                if(array1[x]) >= largest) {
+                if(array1[x] >= largest) {
                     largest = array1[x];
                 }
             }

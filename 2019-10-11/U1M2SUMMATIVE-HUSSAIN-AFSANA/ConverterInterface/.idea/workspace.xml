@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="232b9f6a-aab9-4f20-a1cd-68c5f2f41f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CalculateObject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customerComposition/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CalculateObject/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculateObject/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CalculateObject/CalculateObject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConverterInterface.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPGInheritance/RPGInheritance.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customerComposition/customerComposition.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iceCreamClassDesign/iceCreamClassDesign.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,7 +50,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ConverterSwitch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="40">
               <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
@@ -167,10 +155,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118120804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.117962465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -180,7 +168,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32768363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,7 +244,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ConverterSwitch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="40">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>

@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bacc433-6838-4c0c-8a18-f99f57425e30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customerComposition/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculateObject.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConverterInterface/ConverterInterface.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPGInheritance/RPGInheritance.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customerComposition/customerComposition.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../iceCreamClassDesign/iceCreamClassDesign.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -152,7 +140,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />

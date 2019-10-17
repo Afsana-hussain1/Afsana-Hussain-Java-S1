@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fea2278-daa2-4dad-8ec3-836f8f2126e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CalculateObject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customerComposition/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CalculateObject/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculateObject/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CalculateObject/CalculateObject.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConverterInterface/ConverterInterface.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RPGInheritance/RPGInheritance.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customerComposition/customerComposition.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iceCreamClassDesign.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />

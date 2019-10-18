@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6fea2278-daa2-4dad-8ec3-836f8f2126e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../customerComposition/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -30,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/IceCreamPOS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding>
                 <element signature="e#540#541#0" expanded="true" />
                 <element signature="e#576#577#0" expanded="true" />
@@ -57,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/IceCreamFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="e#270#271#0" expanded="true" />
                 <element signature="e#304#305#0" expanded="true" />
@@ -187,7 +186,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/IceCreamFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="e#270#271#0" expanded="true" />
             <element signature="e#304#305#0" expanded="true" />
@@ -214,7 +213,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/IceCreamPOS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding>
             <element signature="e#540#541#0" expanded="true" />
             <element signature="e#576#577#0" expanded="true" />

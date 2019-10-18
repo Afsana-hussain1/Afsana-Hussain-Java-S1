@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="912e0e89-6266-40db-b535-26eb65543120" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculateObject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -32,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="e#855#856#0" expanded="true" />
                 <element signature="e#887#888#0" expanded="true" />
@@ -194,7 +193,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="e#855#856#0" expanded="true" />
             <element signature="e#887#888#0" expanded="true" />

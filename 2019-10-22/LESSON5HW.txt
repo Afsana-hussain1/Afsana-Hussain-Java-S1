@@ -1,0 +1,17 @@
+
+* Why is it important to have a good understanding of the underlying business when creating a data model? It is important because it helps to 
+understand what exactly is needed to be represented in the model such as entitites and attributes
+
+* Compare and contrast data and metadata.Data can simply be a piece of information.Metadata specifies the relevant information about the data which helps in identifying the nature and feature of the data.
+
+* What is the difference between an entity and an attribute?
+entities represent real world objects/things that can be identified as unique and independent, while attributes represent the properties of those entities.
+attribute is like characteristics of entity.
+* What is a primary key?
+primary key is one or more columns that uniquely identify each row in a table. The primary key is defined by using the PRIMARY KEY constraint when either creating a table or altering a table. Each table can have only one primary key.
+
+* What is a foreign key?A foreign key is a column or group of columns in a relational database table that provides a link between data in two tables.
+
+* What is the purpose of relationships in a relational database?
+A relationship, in the context of databases, is a situation that exists between two relational database tables when one table has a foreign key that references the primary key of the other table. Relationships allow relational databases to split and store data in different tables, while linking disparate data items.
+* What does a row represent in a relational database?Row (database) In the context of a relational database, a row —also called a tuple —represents a single, implicitly structured data item in a table.

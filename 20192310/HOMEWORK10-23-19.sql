@@ -37,7 +37,7 @@ where last_name like 'w%';
 
 -- List all customers from zipcodes that start with 55
 SELECT * FROM northwind.customers
-where postal_code like 55% ;
+where postal_code like '55%' ;
 
 -- List all customers from zipcodes that end with 0
 select * from northwind.customers
@@ -49,7 +49,7 @@ where email like '%.org';
 
 -- List the first name, last name, and phone number for all customers from the 202 area code
 select* from northwind.customers
-where phone like 1-(202%);
+where phone like '1-(202%)';
 
 -- List the order id for each order placed by George Wilson
 select* from northwind.orders

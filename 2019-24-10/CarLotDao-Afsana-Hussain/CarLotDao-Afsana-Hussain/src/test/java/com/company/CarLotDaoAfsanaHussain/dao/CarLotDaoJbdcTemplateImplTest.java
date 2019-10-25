@@ -42,7 +42,7 @@ public class CarLotDaoJbdcTemplateImplTest {
         car = dao.addCar(car);
         //ALSO ACT -- RETRIEVE MOTOCYCLR FROM DAO
 
-        Car car2 =dao.getCar(car.getId());
+        Car car2 = dao.getCar(car.getId());
 
         //ASSERT- compare the orig moto obj with the one retrived from the datbase
         // make sure they are equal
@@ -51,10 +51,10 @@ public class CarLotDaoJbdcTemplateImplTest {
         //ACT DELETE THE MOTO FROM THE DAO
         dao.deleteCar(car.getId());
         //act retrieve moto from dao
-        car2= dao.getCar(car.getId());
+        car2 = dao.getCar(car.getId());
         //ASSERT -THAT MOTO IS NULL
         assertNull(car2);
-
+    }
     @org.junit.Test
     public void getAllCars() {
             //ARRANGE CREATE A NEW MOTOCYCLE
@@ -79,7 +79,7 @@ public class CarLotDaoJbdcTemplateImplTest {
             //ASSETS DOA IS EQUAL TO 2
             assertEquals(2, carList.size());
         }
-    }
+
 
     @org.junit.Test
     public void getCarsByColor() {

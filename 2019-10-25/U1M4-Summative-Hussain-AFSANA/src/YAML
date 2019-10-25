@@ -1,0 +1,88 @@
+openapi: 3.0.0
+info:
+  title: U1M4SummativeHussainAfsanaApplication
+  description:
+    service which gets and posts
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /magic:
+    post:
+      summary: generates random answer and question
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Answer'
+      responses:
+        '201':
+          description: created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Answer'
+
+
+  /quote:
+    get:
+      summary: produces quote randomly
+
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quote'
+  /word:
+    get:
+      summary:  produces word randomly
+
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Definition'
+
+
+components:
+  schemas:
+    Answer:
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
+
+      required:
+
+        - answer
+
+
+    Definition:
+      properties:
+        word:
+          type: string
+        definition:
+          type: string
+
+      required:
+        - word
+        - definition
+    Quote:
+      properties:
+        author:
+          type: string
+        quote:
+          type: string
+
+      required:
+        - author
+        - quote
+​
+​

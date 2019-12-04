@@ -33,7 +33,7 @@ public class CommentController {
         Comment comment = dao.getComment(id);
 
         if(comment == null){
-            throw new NotFoundException(("No Comment with this id exists"));
+            throw new NotFoundException(("that comment with the id doesnt exist"));
         }
         return dao.getComment(id);
     }
@@ -59,7 +59,7 @@ public class CommentController {
         Comment comment = dao.getComment(id);
 
         if(comment == null){
-            throw new NotFoundException(("No Comment with this id exists"));
+            throw new NotFoundException(("the comment with that id  doesnt exists"));
         }
         dao.deleteComment(id);
     }

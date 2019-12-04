@@ -76,4 +76,16 @@ public class TaskViewModel {
     public int hashCode() {
         return Objects.hash(getId(), getDescription(), getCreateDate(), getDueDate(), getCategory(), getAdvertisement());
     }
+
+    @Override
+    public String toString() {
+        return "TaskViewModel{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", createDate=" + createDate +
+                ", dueDate=" + dueDate +
+                ", category='" + category + '\'' +
+                ", advertisement='" + advertisement + '\'' +
+                '}';
+    }
 }

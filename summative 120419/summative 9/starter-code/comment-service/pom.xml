@@ -201,9 +201,16 @@
 			<artifactId>jackson-datatype-jsr310</artifactId>
 
 		</dependency>
-
-
-
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>1.19.1</version>
+        </dependency>
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.23.2-GA</version>
+		</dependency>
 
 
 	</dependencies>

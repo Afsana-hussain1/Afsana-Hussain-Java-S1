@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b31650c0-02ef-42e3-a4d9-4801534a7f6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../2019-10-21/cityproject/cityList" beforeDir="false" afterPath="$PROJECT_DIR$/../../2019-10-21/cityproject/cityList" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../summative 120419/summative 9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../summative 120419/summative 9/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../summative 120419/summative 9/starter-code/comment-service/src/main/java/com/trilogyed/comment/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../summative 120419/summative 9/starter-code/comment-service/src/main/java/com/trilogyed/comment/controller/CommentController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/starter-code/adserver-service/target/" />
     <ignored path="$PROJECT_DIR$/starter-code/tasker-service/target/" />
@@ -442,7 +440,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28926176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -454,7 +451,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.21388102" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.21388102" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />

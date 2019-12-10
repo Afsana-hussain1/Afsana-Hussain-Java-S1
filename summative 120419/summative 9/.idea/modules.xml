@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/starter-code/cloud-config-service/cloud-config-service.iml" filepath="$PROJECT_DIR$/starter-code/cloud-config-service/cloud-config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/starter-code/comment-queue/comment-queue.iml" filepath="$PROJECT_DIR$/starter-code/comment-queue/comment-queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/starter-code/comment-service/comment-service.iml" filepath="$PROJECT_DIR$/starter-code/comment-service/comment-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/starter-code/eureka-service-registry/eureka-service-registry.iml" filepath="$PROJECT_DIR$/starter-code/eureka-service-registry/eureka-service-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/starter-code/post-service/post-service.iml" filepath="$PROJECT_DIR$/starter-code/post-service/post-service.iml" />

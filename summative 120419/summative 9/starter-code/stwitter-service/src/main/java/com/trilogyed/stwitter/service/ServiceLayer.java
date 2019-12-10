@@ -6,34 +6,46 @@ import com.trilogyed.stwitter.model.Comment;
 import com.trilogyed.stwitter.model.Post;
 import com.trilogyed.stwitter.viewModel.CommentViewModel;
 import com.trilogyed.stwitter.viewModel.PostViewModel;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
 public class ServiceLayer {
 
+    public static final String EXCHANGE = "comment-exchange";
+    public static final String ROUTING = "comment.create.servicetalker";
+
     CommentServiceClient commentServiceClient;
-     PostServiceClient postServiceClient;
+    PostServiceClient postServiceClient;
+    RabbitTemplate template;
 
     @Autowired
-    public ServiceLayer(CommentServiceClient commentServiceClient, PostServiceClient postServiceClient) {
+    public ServiceLayer(CommentServiceClient commentServiceClient, PostServiceClient postServiceClient, RabbitTemplate template) {
         this.commentServiceClient = commentServiceClient;
         this.postServiceClient = postServiceClient;
+        this.template = template;
     }
 
 
     public PostViewModel addPost(PostViewModel postViewModel) {
-
         Post post = new Post();
         post.setPostDate(postViewModel.getPostDate());
         post.setPosterName(postViewModel.getPosterName());
         post.setPost(postViewModel.getPost());
-
         postServiceClient.addPost(post);
         postViewModel.setPostId(post.getPostID());
+        Map<String, Integer> comments = new HashMap<>();
+        for (String s : postViewModel.getComments()) {
+            comments.put(s, post.getPostID());
+        }
+
+        template.convertAndSend(EXCHANGE, ROUTING, comments);
         return postViewModel;
     }
 

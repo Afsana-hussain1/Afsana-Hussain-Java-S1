@@ -1,6 +1,7 @@
 package com.trilogyed.post.controller;
 
 import com.trilogyed.post.dao.PostDao;
+import com.trilogyed.post.exceptions.NotFoundExceptions;
 import com.trilogyed.post.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/posts")
 @RestController
 @RefreshScope
 public class PostController {
@@ -29,38 +29,38 @@ public class PostController {
         Post post = postdao.getPost(id);
 
         if(post == null){
-            throw new NotFoundException(("the post w/that id doesnt exist"));
+            throw new NotFoundExceptions(("the post w/that id doesn't exist"));
         }
         return postdao.getPost(id);
     }
 
     @RequestMapping(value = "/posts/{id}", method = RequestMethod.PUT)
-
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updatePost(@RequestBody Post post, @PathVariable int id) {
         postdao.updatePost(post);
 
     }
 
-    @RequestMapping(value = "/posts/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/posts/{id}", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletePost(@PathVariable int id) {
         Post post = postdao.getPost(id);
 
         if(post == null){
-            throw new NotFoundException(("that post does not exist"));
+            throw new NotFoundExceptions(("that post does not exist"));
         }
         postdao.deletePost(id);
 
     }
 
-    @GetMapping
+    @RequestMapping(value = "/posts", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public List<Post> getAllPosts() {
 
         return postdao.getAllPosts();
     }
 
-    @GetMapping("/user/{posterName}")
+    @GetMapping("/posts/user/{posterName}")
     @ResponseStatus(HttpStatus.OK)
     public List<Post> getPostsByUser(@PathVariable String posterName) {
 

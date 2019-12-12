@@ -22,25 +22,15 @@ public class CommentDaoJdbcTemplateImplTest {
 
      CommentDao commentDao;
 
-
-
     @Before
     public void setUp() throws Exception {
-
         List<Comment> commentList = commentDao.getAllComments();
-
         commentList.stream().forEach(comment -> commentDao.deleteComment(comment.getCommentId()));
 
 
     }
 
-//    @After
-//    public void tearDown() throws Exception {
-//
-//    }
-
     @Test
-
     public void addGetDeleteComment() {
 
         Comment comment = new Comment();
@@ -65,7 +55,6 @@ public class CommentDaoJdbcTemplateImplTest {
 
 
     @Test
-
     public void getAllComments() {
 
         Comment comment = new Comment();
@@ -75,18 +64,15 @@ public class CommentDaoJdbcTemplateImplTest {
         comment.setComment("I like pie");
         comment = commentDao.addComment(comment);
 
-        //commentDao.addComment(comment);
-
 
         Comment comment1 = new Comment();
         comment1.setPostId(2);
         comment1.setCreateDate(LocalDate.of(2003, 12, 26));
         comment1.setCommenterName("kim");
         comment1.setComment("im allergic to your cat");
-      commentDao.addComment(comment1);
+
+        commentDao.addComment(comment1);
         List<Comment> commentList = commentDao.getAllComments();
-
-
 
         assertEquals(2, commentList.size());
 
@@ -95,7 +81,6 @@ public class CommentDaoJdbcTemplateImplTest {
 
 
     @Test
-
     public void updateComment() {
 
         Comment comment = new Comment();
@@ -105,7 +90,6 @@ public class CommentDaoJdbcTemplateImplTest {
         comment.setComment("I like pie");
         comment = commentDao.addComment(comment);
 
-        //comment = commentDao.addComment(comment);
 
         comment.setPostId(4);
         comment.setCreateDate(LocalDate.of(2012, 12, 26));
@@ -113,8 +97,6 @@ public class CommentDaoJdbcTemplateImplTest {
         comment.setComment("I like pie");
 
         commentDao.updateComment(comment);
-
-
 
         Comment comment1 = commentDao.getComment(comment.getCommentId());
 
@@ -127,7 +109,6 @@ public class CommentDaoJdbcTemplateImplTest {
 
 
     @Test
-
     public void getCommentsByPostId() {
 
         Comment comment = new Comment();
@@ -142,8 +123,6 @@ public class CommentDaoJdbcTemplateImplTest {
         List<Comment> commentList = commentDao.findCommentsByPostId(4);
 
         assertEquals(commentList.size(), 1);
-
-
 
         commentList = commentDao.findCommentsByPostId(9);
 

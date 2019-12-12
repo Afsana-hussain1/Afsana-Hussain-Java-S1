@@ -1,7 +1,6 @@
 package com.trilogyed.stwitter.feign;
 
 import com.trilogyed.stwitter.model.Comment;
-import com.trilogyed.stwitter.viewModel.CommentViewModel;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,8 +15,11 @@ public interface CommentServiceClient {
 
 
     @RequestMapping(value = "/comments", method = RequestMethod.POST)
-    CommentViewModel addComment(@Valid @RequestBody Comment comment);
+    Comment addComment(@Valid @RequestBody Comment comment);
 
     @RequestMapping(value = "/comments/posts/{id}", method = RequestMethod.GET)
-    List<String> getCommentsByPostId(@PathVariable int id);
+    List<Comment> getCommentsByPostId(@PathVariable int id);
+
+    @RequestMapping(value = "/comments", method = RequestMethod.GET)
+    List<Comment> getAllComments();
 }

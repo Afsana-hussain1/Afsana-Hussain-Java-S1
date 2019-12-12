@@ -1,5 +1,7 @@
 package com.trilogyed.stwitter.viewModel;
 
+import com.trilogyed.stwitter.model.Comment;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
@@ -7,8 +9,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class PostViewModel {
-
-
 
     private int postId;
     @NotNull
@@ -19,9 +19,9 @@ public class PostViewModel {
     @NotNull
     @Size(max = 255)
     private String post;
+    private List<Comment> commentsList;
 
 
-    private List<String> comments;
 
     public int getPostId() {
         return postId;
@@ -55,12 +55,12 @@ public class PostViewModel {
         this.post = post;
     }
 
-    public List<String> getComments() {
-        return comments;
+    public List<Comment> getComments() {
+        return commentsList;
     }
 
-    public void setComments(List<String> comments) {
-        this.comments = comments;
+    public void setComments(List<Comment> comments) {
+        this.commentsList = comments;
     }
 
     @Override
@@ -72,12 +72,12 @@ public class PostViewModel {
                 Objects.equals(postDate, that.postDate) &&
                 Objects.equals(posterName, that.posterName) &&
                 Objects.equals(post, that.post) &&
-                Objects.equals(comments, that.comments);
+                Objects.equals(commentsList, that.commentsList);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(postId, postDate, posterName, post, comments);
+        return Objects.hash(postId, postDate, posterName, post, commentsList);
     }
 
     @Override
@@ -87,7 +87,7 @@ public class PostViewModel {
                 ", postDate=" + postDate +
                 ", posterName='" + posterName + '\'' +
                 ", post='" + post + '\'' +
-                ", comments=" + comments +
+                ", comments=" + commentsList +
                 '}';
     }
 }

@@ -18,21 +18,14 @@ public class CommentListener {
     private CommentServiceClient client;
 
     @RabbitListener(queues = CommentQueueApplication.QUEUE_NAME)
-    public void recieveComment(Map<String, Integer> commentList) {
+    public void recieveComment(Comment comment) {
         System.out.println("Comment sent through stwitterservice");
-        System.out.println(commentList);
+        System.out.println(comment);
 
-        commentList.entrySet().stream()
-                .forEach(comment -> {
-                    System.out.println("----QUEUE---");
-                    System.out.println(comment);
-                    System.out.println("Creating");
-                    Comment comment1 = new Comment();
-                    comment1.setPostId(comment.getValue());
-                    comment1.setComment(comment.getKey());
-                    comment1.setCreateDate(LocalDate.now());
-                    comment1.setCommenterName("N/A");
-                    System.out.println(client.addComment(comment1));
-                });
+        comment.setCommenterName("Bob");
+        comment.setCreateDate(LocalDate.now());
+        comment = client.addComment(comment);
+
+        System.out.println("Created: " + comment);
     }
 }

@@ -4,15 +4,14 @@ import com.trilogyed.stwitter.feign.CommentServiceClient;
 import com.trilogyed.stwitter.feign.PostServiceClient;
 import com.trilogyed.stwitter.model.Comment;
 import com.trilogyed.stwitter.model.Post;
-import com.trilogyed.stwitter.viewModel.CommentViewModel;
 import com.trilogyed.stwitter.viewModel.PostViewModel;
+import com.sun.jersey.api.NotFoundException;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Component
@@ -33,20 +32,45 @@ public class ServiceLayer {
     }
 
 
-    public PostViewModel addPost(PostViewModel postViewModel) {
+    public PostViewModel addPost(PostViewModel postViewModel) throws InterruptedException {
         Post post = new Post();
         post.setPostDate(postViewModel.getPostDate());
         post.setPosterName(postViewModel.getPosterName());
         post.setPost(postViewModel.getPost());
-        postServiceClient.addPost(post);
+
+        post = postServiceClient.addPost(post);
         postViewModel.setPostId(post.getPostID());
-        Map<String, Integer> comments = new HashMap<>();
-        for (String s : postViewModel.getComments()) {
-            comments.put(s, post.getPostID());
+
+        for (Comment comment : postViewModel.getComments()) {
+            comment.setPostId(post.getPostID());
+            template.convertAndSend(EXCHANGE, ROUTING, comment);
+        }
+        synchronized (postViewModel) {
+            while (postViewModel.getComments().size() == 0) {
+                wait(1000);
+                postViewModel.setComments(commentServiceClient.getCommentsByPostId(postViewModel.getPostId()));
+            }
         }
 
-        template.convertAndSend(EXCHANGE, ROUTING, comments);
+
         return postViewModel;
+    }
+
+
+    @Transactional
+    public Comment addComment(Comment comment, int postId) {
+        Post post = postServiceClient.getPost(postId);
+        if (post== null)
+            throw new NotFoundException("No Post with that id is found");
+         {
+
+            comment.setPostId(postId);
+            comment = commentServiceClient.addComment(comment);
+            comment.setCommentId(comment.getCommentId());
+
+        }
+
+        return comment;
     }
 
 
@@ -60,14 +84,15 @@ public class ServiceLayer {
     }
 
 
+
+
     public PostViewModel buildViewModel (Post post) {
-        List<String> comments = commentServiceClient.getCommentsByPostId(post.getPostID());
         PostViewModel postViewModel = new PostViewModel();
         postViewModel.setPostId(post.getPostID());
         postViewModel.setPostDate(post.getPostDate());
         postViewModel.setPosterName(post.getPosterName());
         postViewModel.setPost(post.getPost());
-        postViewModel.setComments(comments);
+        postViewModel.setComments(commentServiceClient.getCommentsByPostId(post.getPostID()));
         return postViewModel;
     }
 

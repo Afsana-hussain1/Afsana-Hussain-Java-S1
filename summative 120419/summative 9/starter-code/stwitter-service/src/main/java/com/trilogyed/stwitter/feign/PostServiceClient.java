@@ -16,11 +16,13 @@ public interface PostServiceClient {
     Post getPost(@PathVariable int id);
 
     @RequestMapping(value = "/posts", method = RequestMethod.POST)
-    PostViewModel addPost(Post post);
+    Post addPost(Post post);
 
 
     @RequestMapping(value = "/posts/user/{poster_name}", method = RequestMethod.GET)
     List<Post> getPostsByPosterName(@PathVariable String poster_name);
 
+    @RequestMapping(value = "/posts",method = RequestMethod.GET)
+    List<Post>getAllPosts();
 
 }

@@ -27,7 +27,6 @@ public class InvoiceViewModel {
     private int itemId;
     @NotNull(message = "provide Unitprice")
     private BigDecimal unitPrice;
-    @NotEmpty(message = "Please supply a value for quantity")
     @Min(value = 1,message = "can not have less than 1 item being sold")
     private int quantity;
 

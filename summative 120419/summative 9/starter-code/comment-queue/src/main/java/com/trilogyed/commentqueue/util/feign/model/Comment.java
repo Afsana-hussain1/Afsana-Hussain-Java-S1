@@ -1,14 +1,20 @@
 package com.trilogyed.commentqueue.util.feign.model;
 
+import com.sun.istack.internal.NotNull;
+
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Comment {
 
     private int commentId;
+    @NotNull
     private int postId;
     private LocalDate createDate;
+    @NotEmpty
     private String commenterName;
+    @NotEmpty
     private String comment;
 
     public String getComment() {

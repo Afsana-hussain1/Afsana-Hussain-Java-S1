@@ -18,7 +18,6 @@ public class TshirtViewModel {
     private  String description;
     @NotNull(message = "Please supply a value for price")
     private BigDecimal price;
-    @NotEmpty(message = "Please supply a value for quantity")
     private int quantity;
 
     public int getTShirtId() {

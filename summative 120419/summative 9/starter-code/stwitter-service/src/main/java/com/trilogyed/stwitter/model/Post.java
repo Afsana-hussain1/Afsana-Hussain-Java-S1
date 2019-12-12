@@ -1,5 +1,6 @@
 package com.trilogyed.stwitter.model;
 
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
@@ -8,17 +9,19 @@ public class Post {
 
     private int postID;
     private LocalDate postDate;
+    @NotEmpty
     private String posterName;
+    @NotEmpty
     private String post;
 
-    private List<String> comments;
+    private List<Comment> commentsList;
 
-    public List<String> getComments() {
-        return comments;
+    public List<Comment> getComments() {
+        return commentsList;
     }
 
-    public void setComments(List<String> comments) {
-        this.comments = comments;
+    public void setComments(List<Comment> comments) {
+        this.commentsList = comments;
     }
 
     public int getPostID() {
@@ -62,12 +65,12 @@ public class Post {
                 Objects.equals(postDate, post1.postDate) &&
                 Objects.equals(posterName, post1.posterName) &&
                 Objects.equals(post, post1.post) &&
-                Objects.equals(comments, post1.comments);
+                Objects.equals(commentsList, post1.commentsList);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(postID, postDate, posterName, post, comments);
+        return Objects.hash(postID, postDate, posterName, post, commentsList);
     }
 
     @Override
@@ -77,7 +80,7 @@ public class Post {
                 ", postDate=" + postDate +
                 ", posterName='" + posterName + '\'' +
                 ", post='" + post + '\'' +
-                ", comments=" + comments +
+                ", comments=" + commentsList +
                 '}';
     }
 }

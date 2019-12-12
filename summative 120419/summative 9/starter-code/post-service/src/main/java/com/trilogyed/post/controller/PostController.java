@@ -8,6 +8,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -19,7 +20,7 @@ public class PostController {
 
     @RequestMapping(value = "/posts", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    public Post createPost(@RequestBody Post post) {
+    public Post addPost(@RequestBody @Valid Post post) {
         return postdao.addPost(post);
     }
 

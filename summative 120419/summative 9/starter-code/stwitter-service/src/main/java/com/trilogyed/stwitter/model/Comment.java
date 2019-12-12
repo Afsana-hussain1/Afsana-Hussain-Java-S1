@@ -1,5 +1,6 @@
 package com.trilogyed.stwitter.model;
 
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -8,7 +9,9 @@ public class Comment {
     private int commentId;
     private int postId;
     private LocalDate createDate;
+    @Size(max = 50)
     private String commenterName;
+    @Size(max = 255)
     private String comment;
 
     public String getComment() {

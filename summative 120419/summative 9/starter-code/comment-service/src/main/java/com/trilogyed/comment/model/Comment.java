@@ -1,20 +1,18 @@
 package com.trilogyed.comment.model;
-
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Comment {
 
     private int commentId;
+    @NotNull
     private int postId;
     private LocalDate createDate;
+    @NotEmpty
     private String commenterName;
+    @NotEmpty
     private String comment;
 
     public String getComment() {

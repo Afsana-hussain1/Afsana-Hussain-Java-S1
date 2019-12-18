@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/console")
@@ -18,7 +19,7 @@ public class ConsoleController {
 
     @PostMapping//Another way to set the Rest API Post mapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ConsoleViewModel createGame(@RequestBody @Valid ConsoleViewModel console) {
+    public ConsoleViewModel createConsole(@RequestBody @Valid ConsoleViewModel console) {
         return serviceLayer.saveConsole(console);
     }
 
@@ -29,6 +30,12 @@ public class ConsoleController {
         if (consoleViewModel == null)
             throw new NotFoundException("console could not be retrieved for id " + consoleId);
         return consoleViewModel;
+    }
+
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<ConsoleViewModel> getAllConsoles(){
+        return serviceLayer.getAllConsoles();
     }
 
     @DeleteMapping("/{id}")//Another way to set the Rest API Delete mapping

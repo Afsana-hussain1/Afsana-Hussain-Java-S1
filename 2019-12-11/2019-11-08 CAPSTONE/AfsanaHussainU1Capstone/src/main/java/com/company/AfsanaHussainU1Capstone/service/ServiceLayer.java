@@ -79,6 +79,10 @@ public class ServiceLayer {
             return buildConsole(consoles);
     }
 
+    public List<ConsoleViewModel> getAllConsoles() {
+        return consoleDao.findAllConsoles().stream().map(this::buildConsole).collect(Collectors.toList());
+    }
+
     public void deleteConsole(int id) {
         consoleDao.deleteConsoleById(id);
     }

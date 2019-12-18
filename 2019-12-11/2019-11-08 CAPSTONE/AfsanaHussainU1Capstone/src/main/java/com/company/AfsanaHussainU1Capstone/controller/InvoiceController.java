@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/invoice")
@@ -32,6 +33,12 @@ public class InvoiceController {
             throw new NotFoundException("not found in db");
 
         return invoice;
+    }
+
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<InvoiceViewModel>getAll(){
+        return serviceLayer.getAllInvoices();
     }
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)

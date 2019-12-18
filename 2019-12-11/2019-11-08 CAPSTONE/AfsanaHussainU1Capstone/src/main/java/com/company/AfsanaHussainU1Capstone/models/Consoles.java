@@ -86,4 +86,17 @@ public class Consoles {
     public int hashCode() {
         return Objects.hash(getConsoleId(), getModel(), getManufacturer(), getMemoryAmount(), getProccessor(), getPrice(), getQuantity());
     }
+
+    @Override
+    public String toString() {
+        return "Consoles{" +
+                "consoleId=" + consoleId +
+                ", model='" + model + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", memoryAmount='" + memoryAmount + '\'' +
+                ", proccessor='" + proccessor + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                '}';
+    }
 }
